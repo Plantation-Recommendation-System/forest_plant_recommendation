@@ -34,5 +34,16 @@ python -c "import numpy, pandas, matplotlib, sklearn; print('Everything is worki
 ```
 
 
+You add package
+      ↓
+Update environment.yml
+      ↓
+Push to GitHub
+      ↓
+Friend: git pull
+      ↓
+Friend: conda env update -f environment.yml
+
+
 * Do **not** commit `.env` files, API keys, passwords, or other secrets.
 * Pull the latest `main` before starting new work.
