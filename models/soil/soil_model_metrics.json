@@ -1,0 +1,18 @@
+{
+  "test_accuracy": 0.8491620111731844,
+  "test_balanced_accuracy": 0.8610757867183816,
+  "test_macro_f1": 0.8255792531767352,
+  "test_loss": 0.7222147247644776,
+  "classes": [
+    "Alluvial Soil",
+    "Arid Soil",
+    "Black Soil",
+    "Laterite Soil",
+    "Mountain Soil",
+    "Red Soil",
+    "Yellow Soil"
+  ],
+  "training_images": 832,
+  "validation_images": 178,
+  "test_images": 179
+}

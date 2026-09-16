@@ -1,0 +1,17 @@
+{
+  "predicted_soil": "Black",
+  "confidence": 0.875326931476593,
+  "confidence_percent": 87.5326931476593,
+  "confidence_level": "HIGH",
+  "soil_signal_usable": true,
+  "num_images": 3,
+  "probabilities": {
+    "Black": 0.875326931476593,
+    "Red": 0.03516412153840065,
+    "Alluvial": 0.02787628024816513,
+    "Laterite": 0.022968336939811707,
+    "Mountain": 0.02279842644929886,
+    "Yellow": 0.008261443115770817,
+    "Arid": 0.007604443002492189
+  }
+}

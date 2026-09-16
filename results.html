@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Recommendations | Plant Survival AI</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                🌱
+            </div>
+
+            <div>
+
+                <div class="brand-name">
+                    Plant Survival AI
+                </div>
+
+                <div class="brand-subtitle">
+                    Intelligent tree recommendations
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                New Recommendation
+            </a>
+
+            <a href="index.html#about">
+                About
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= RESULTS ================= -->
+
+    <main class="results-page">
+
+
+        <!-- HERO -->
+
+        <section class="results-hero">
+
+            <span class="hero-badge">
+                🌿 AI recommendation results
+            </span>
+
+            <h1>
+                Trees recommended<br>
+                <span>for your environment.</span>
+            </h1>
+
+            <p id="result-location">
+                Based on your location and selected conditions.
+            </p>
+
+        </section>
+
+
+        <!-- ================= RESULTS CONTENT ================= -->
+
+        <section class="results-section">
+
+
+            <div class="results-heading">
+
+                <div>
+
+                    <span class="section-label">
+                        TOP RECOMMENDATIONS
+                    </span>
+
+                    <h2>
+                        Best supported species
+                    </h2>
+
+                </div>
+
+                <a
+                    href="index.html"
+                    class="new-recommendation"
+                >
+                    ← New recommendation
+                </a>
+
+            </div>
+
+
+            <!-- RECOMMENDATION CARDS -->
+
+            <div
+                id="recommendation-grid"
+                class="recommendation-grid"
+            ></div>
+
+
+            <!-- EMPTY STATE -->
+
+            <div
+                id="empty-results"
+                class="empty-results"
+                style="display: none;"
+            >
+
+                <div class="empty-icon">
+                    🌱
+                </div>
+
+                <h2>
+                    No recommendations found
+                </h2>
+
+                <p>
+                    We couldn't load the recommendation results.
+                </p>
+
+                <a
+                    href="index.html"
+                    class="recommend-button"
+                >
+                    Start again →
+                </a>
+
+            </div>
+
+
+            <!-- ================= REGIONAL INFO ================= -->
+
+            <div class="regional-info">
+
+                <div class="regional-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <h3>
+                        Regional species evidence
+                    </h3>
+
+                    <p>
+                        Plant Survival AI first identifies species
+                        with evidence of occurring in the selected
+                        region. Species with sufficient survival-model
+                        evidence are then considered for the main
+                        quantitative ranking.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= DISCLAIMER ================= -->
+
+            <div class="results-disclaimer">
+
+                <strong>
+                    About the suitability score
+                </strong>
+
+                <p>
+                    This is an AI-assisted suitability ranking,
+                    not a calibrated probability of survival.
+                    Actual plant performance can vary with local
+                    conditions and management.
+                </p>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+            🌱 <strong>Plant Survival AI</strong>
+        </div>
+
+        <span>
+            AI-assisted plantation recommendation
+        </span>
+
+    </footer>
+
+
+    <script src="results.js"></script>
+
+</body>
+
+</html>

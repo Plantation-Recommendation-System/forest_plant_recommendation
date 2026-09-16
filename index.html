@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Plant Survival AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+            <div class="brand-icon">🌱</div>
+
+            <div>
+                <div class="brand-name">Plant Survival AI</div>
+                <div class="brand-subtitle">
+                    Intelligent tree recommendations
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#how-it-works">How it works</a>
+            <a href="#about">About</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    🌿 AI-powered plantation recommendation
+                </span>
+
+                <h1>
+                    Find the right tree<br>
+                    <span>for your environment.</span>
+                </h1>
+
+                <p>
+                    Get tree recommendations based on your location,
+                    soil, environmental conditions and planting requirements.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FORM ================= -->
+
+        <section class="recommendation-section">
+
+            <div class="form-card">
+
+                <div class="section-heading">
+
+                    <span class="step-number">01</span>
+
+                    <div>
+                        <h2>Tell us about your location</h2>
+
+                        <p>
+                            Where are you planning to plant?
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- LOCATION -->
+
+                <div class="input-group">
+
+                    <label for="location">
+                        Location
+                    </label>
+
+                    <div class="location-input">
+
+                        <span class="input-icon">📍</span>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Enter city or location"
+                            autocomplete="off"
+                        >
+
+                        <button
+                            type="button"
+                            id="detect-location"
+                            class="location-button"
+                        >
+                            Use my location
+                        </button>
+
+                    </div>
+
+                    <small id="location-status"></small>
+
+                </div>
+
+
+                <!-- ================= SOIL ================= -->
+
+                <div class="section-heading form-section-heading">
+
+                    <span class="step-number">02</span>
+
+                    <div>
+                        <h2>Analyze your soil</h2>
+
+                        <p>
+                            Upload up to 3 clear photos of the soil.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="soil-upload">
+
+                    <input
+                        type="file"
+                        id="soil-images"
+                        name="soil_images[]"
+                        accept="image/jpeg,image/png,image/webp"
+                        multiple
+                        hidden
+                    >
+
+                    <label
+                        for="soil-images"
+                        class="upload-area"
+                    >
+
+                        <div class="upload-icon">
+                            📷
+                        </div>
+
+                        <strong>
+                            Upload soil photos
+                        </strong>
+
+                        <span>
+                            JPG, PNG or WebP · Up to 3 images
+                        </span>
+
+                    </label>
+
+                    <div
+                        id="image-preview"
+                        class="image-preview"
+                    ></div>
+
+                </div>
+
+
+                <!-- ================= CONDITIONS ================= -->
+
+                <div class="section-heading form-section-heading">
+
+                    <span class="step-number">03</span>
+
+                    <div>
+                        <h2>Planting conditions</h2>
+
+                        <p>
+                            Tell us about the environment where the tree will grow.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <!-- WATER -->
+
+                    <div class="input-group">
+
+                        <label for="water">
+                            💧 Water availability
+                        </label>
+
+                        <select id="water" name="water">
+
+                            <option value="">
+                                Select availability
+                            </option>
+
+                            <option value="low">
+                                Low
+                            </option>
+
+                            <option value="medium">
+                                Medium
+                            </option>
+
+                            <option value="high">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SUNLIGHT -->
+
+                    <div class="input-group">
+
+                        <label for="sunlight">
+                            ☀️ Sunlight
+                        </label>
+
+                        <select id="sunlight" name="sunlight">
+
+                            <option value="">
+                                Select sunlight
+                            </option>
+
+                            <option value="low">
+                                Low / Shade
+                            </option>
+
+                            <option value="medium">
+                                Partial sunlight
+                            </option>
+
+                            <option value="high">
+                                Full sunlight
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MAINTENANCE -->
+
+                    <div class="input-group">
+
+                        <label for="maintenance">
+                            🛠️ Maintenance
+                        </label>
+
+                        <select id="maintenance" name="maintenance">
+
+                            <option value="">
+                                Select maintenance level
+                            </option>
+
+                            <option value="low">
+                                Low
+                            </option>
+
+                            <option value="medium">
+                                Medium
+                            </option>
+
+                            <option value="high">
+                                High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- SITE TYPE -->
+
+                    <div class="input-group">
+
+                        <label for="site-type">
+                            🏙️ Site type
+                        </label>
+
+                        <select id="site-type" name="site_type">
+
+                            <option value="">
+                                Select site type
+                            </option>
+
+                            <option value="roadside">
+                                Roadside
+                            </option>
+
+                            <option value="residential">
+                                Residential area
+                            </option>
+
+                            <option value="park">
+                                Park / Garden
+                            </option>
+
+                            <option value="industrial">
+                                Industrial area
+                            </option>
+
+                            <option value="school">
+                                School / Campus
+                            </option>
+
+                            <option value="agricultural">
+                                Agricultural / Open land
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PURPOSE ================= -->
+
+                <div class="input-group purpose-group">
+
+                    <label for="purpose">
+                        🌳 Planting purpose
+                    </label>
+
+                    <select id="purpose" name="purpose">
+
+                        <option value="">
+                            What is the main purpose?
+                        </option>
+
+                        <option value="shade">
+                            Shade
+                        </option>
+
+                        <option value="pollution">
+                            Pollution reduction
+                        </option>
+
+                        <option value="biodiversity">
+                            Biodiversity
+                        </option>
+
+                        <option value="fruit">
+                            Fruit / Food
+                        </option>
+
+                        <option value="beautification">
+                            Beautification
+                        </option>
+
+                        <option value="timber">
+                            Timber
+                        </option>
+
+                        <option value="restoration">
+                            Ecological restoration
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= SUBMIT ================= -->
+
+                <div class="submit-area">
+
+                    <button
+                        type="button"
+                        id="recommend-button"
+                        class="recommend-button"
+                    >
+
+                        <span>
+                            Find Best Trees
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+
+                    </button>
+
+                    <p class="privacy-note">
+                        Your information is used only to generate recommendations.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section
+            id="how-it-works"
+            class="how-section"
+        >
+
+            <div class="section-title">
+
+                <span>HOW IT WORKS</span>
+
+                <h2>
+                    From your environment<br>
+                    to the right tree.
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step-card">
+
+                    <div class="step-icon">📍</div>
+
+                    <h3>1. Location</h3>
+
+                    <p>
+                        We identify species with evidence of occurring
+                        in your region.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-icon">🌱</div>
+
+                    <h3>2. Soil</h3>
+
+                    <p>
+                        Your soil photographs can be analyzed by
+                        our soil classification model.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-icon">🧠</div>
+
+                    <h3>3. AI ranking</h3>
+
+                    <p>
+                        Environmental and survival evidence are combined
+                        to rank suitable species.
+                    </p>
+
+                </div>
+
+
+                <div class="step-card">
+
+                    <div class="step-icon">🌳</div>
+
+                    <h3>4. Recommendation</h3>
+
+                    <p>
+                        Get a ranked list with scientific names,
+                        Indian names and plant information.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section
+            id="about"
+            class="about-section"
+        >
+
+            <div class="about-card">
+
+                <div>
+                    <span class="section-label">
+                        ABOUT THE PROJECT
+                    </span>
+
+                    <h2>
+                        Data-driven plantation decisions.
+                    </h2>
+                </div>
+
+                <p>
+                    Plant Survival AI combines regional species evidence,
+                    historical survival observations, soil analysis and
+                    environmental conditions to help identify trees that
+                    are better suited to a planting location.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+            🌱 <strong>Plant Survival AI</strong>
+        </div>
+
+        <span>
+            AI-assisted plantation recommendation
+        </span>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

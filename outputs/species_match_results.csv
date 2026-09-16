@@ -1,0 +1,17 @@
+species_normalized,pune_tree_count,common_name,local_name,dominant_condition,canonical_botanical_name,survival_match,recommendation_eligible,evidence_tier,survival_observations,observed_survival_mean,observed_survival_median,observed_survival_sd,observed_survival_min,observed_survival_max,species_full,survival_species_match
+xylia xylocarpa,31,Burma Ironwod,Jambha,Healthy,Xylia xylocarpa (Roxb.) Taub.,True,True,C,12,96.1313559325,98.033050845,4.5616643850296565,84.4,100.0,Xylia xylocarpa,True
+mesua ferrea,4,Nagkeshar,Nagkeshar,Healthy,Mesua ferrea Linn.,True,True,C,8,90.63274378625,90.764818355,7.468612526863033,80.0,100.0,Mesua ferrea,True
+melia azedarach,600,Bakneem,Bakneem,Healthy,Melia azedarach L.,True,True,C,8,82.58386188,85.15,16.615578729662797,55.0,100.0,Melia azedarach,True
+gmelina arborea,1263,Shivan,Shivan,Healthy,Gmelina arborea Roxb.,True,True,C,12,78.55833333333334,82.7,22.73681269472816,27.5,100.0,Gmelina arborea,True
+acacia mangium,1292,Vilayati Babhul,Menjim,Healthy,Acacia mangium Willd.,True,True,B,18,78.23069679888889,94.95762712,32.57957024729347,0.0,100.0,Acacia mangium,True
+bischofia javanica,1,Bishop wood,Boke,Healthy,Bischofia javanica Blume,True,True,C,11,72.49568630181818,78.46,27.36770060578404,0.0,100.0,Bischofia javanica,True
+acacia auriculiformis,4775,Earleaf Acacia,Australian Acacia,Healthy,Acacia auriculiformis A. cunh ex Benth.,True,True,C,10,66.75702368099999,68.07039074,33.13606982694277,28.80172113,99.77652531,Acacia auriculiformis,True
+tectona grandis,16665,Teak Wood Tree,Sag,Healthy,Tectona grandis Linn.f.,True,True,C,5,58.76069645,49.81496705,16.600730039553262,45.10079878,85.79577664,Tectona grandis,True
+calophyllum inophyllum,540,Sultan Champa,Undi,Healthy,Calophyllum inophyllum Linn.,True,True,C,9,57.40225249222223,43.82022472,31.887672280626123,22.2,100.0,Calophyllum inophyllum,True
+swietenia macrophylla,14039,Bigleaf Mahogani,Mothi Mahogani,Healthy,Swietenia macrophylla King.,True,True,B,16,48.81875,60.5,43.060147371632006,0.0,100.0,Swietenia macrophylla,True
+adenanthera pavonina,57,Ratangunj,Thorla Goonj,Healthy,Adenanthera pavonina Linn.,True,True,C,7,48.39185580857144,67.0,42.18020832548588,0.0,93.45794393,Adenanthera pavonina,True
+artocarpus heterophyllus,8906,Jackfruit,Phanas,Healthy,Artocarpus heterophyllus Lamk.,True,True,C,8,40.87,30.3,27.76005300530139,11.8,91.07,Artocarpus heterophyllus,True
+acrocarpus fraxinifolius,1,Pink Cedar,Tokphal,Healthy,Acrocarpus fraxinifolius Arn.,True,True,C,5,40.14,28.6,33.439542460984725,14.9,98.7,Acrocarpus fraxinifolius,True
+careya arborea,16,Wild Guava,Kumbha,Healthy,Careya arborea Roxb.,True,True,C,6,33.31166666666667,38.885,18.702710409634925,8.3,55.56,Careya arborea,True
+caryota urens,12505,Fish Tail Palm,Bherali Mad,Healthy,Caryota urens Linn.,True,True,C,7,26.27142857142857,23.3,14.349415119987096,6.8,46.8,Caryota urens,True
+cananga odorata,4,Ylang Ylang Tree,Ylang Ylang Tree,Healthy,Cananga odorata (Lamk.) Hook.f. & Thom.,True,True,C,6,23.145,19.44,16.26198973065719,5.56,44.44,Cananga odorata,True
