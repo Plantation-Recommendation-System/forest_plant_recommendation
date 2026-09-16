@@ -1,2 +1,0 @@
-model,loss_function,iterations,depth,learning_rate,train_rows,validation_rows,test_rows,train_locations,validation_locations,test_locations
-Ranking V1,YetiRankPairwise,41,7,0.035,2290,287,794,69,17,20

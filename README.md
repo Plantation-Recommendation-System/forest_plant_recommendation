@@ -1,6 +1,6 @@
 # Plant Survival AI
 
-A clean rebuild centered on one source dataset: `data/survival_ml_cleaned.csv`.
+A clean rebuild centered on one source dataset: `data/survival_ml_final.csv`.
 
 ## Current Architecture
 
@@ -25,15 +25,13 @@ AI-Based_Plantation_Recommendation_System/
 ├── frontend/                 React/Vite application
 ├── backend/                  FastAPI REST API
 ├── data/
-│   └── survival_ml_cleaned.csv
-├── models/
-│   └── survival_v5_CORRECT.cbm
+│   └── survival_ml_final.csv
 └── ml_pipeline/              Reserved for the rebuilt ML pipeline
 ```
 
 ## Main Dataset
 
-`data/survival_ml_cleaned.csv` is the only retained dataset. It contains historical survival observations and includes the target column `survival_per`.
+`data/survival_ml_final.csv` is the only retained dataset. It contains historical survival observations and includes the target column `survival_per`.
 
 Important current factors include:
 
