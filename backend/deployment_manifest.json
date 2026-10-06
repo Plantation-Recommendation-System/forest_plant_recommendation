@@ -1,0 +1,42 @@
+{
+  "project": "Forest Plantation Recommendation System",
+  "deployment_export_version": "1.0",
+  "architecture": [
+    "Climate screening is primary",
+    "Soil refinement is secondary",
+    "CatBoost is supporting survival evidence",
+    "No arbitrary weighted final score"
+  ],
+  "artifacts": {
+    "catboost_model": "models/catboost_survival_final.cbm",
+    "soil_image_model": "models/efficientnet_b0_soil_final.pth",
+    "climate_profiles": "data/species_climate_profiles.csv",
+    "soil_profiles": "data/species_soil_profiles.csv",
+    "species_metadata": "data/species_metadata.csv",
+    "recommendation_logic": "app/services/recommendation_logic.py",
+    "soil_texture_observations": "data/species_soil_texture_observations.csv"
+  },
+  "profile_coverage": {
+    "climate_profile_species": 495,
+    "soil_profile_species": 495,
+    "metadata_species": 520,
+    "climate_with_metadata": 495,
+    "soil_with_metadata": 495,
+    "climate_and_soil_overlap": 495
+  },
+  "catboost_feature_count": 29,
+  "soil_observation_exported": true,
+  "sha256": {
+    "models/catboost_survival_final.cbm": "b45d100dd63ee7c5b06268f361c0447450b4ca71352dd572640f31e02d9a10e8",
+    "models/efficientnet_b0_soil_final.pth": "8dac9d4b83994dbca19d4b7e72873a091886c8796062bc9b92be120bdd06f680",
+    "data/species_climate_profiles.csv": "fdc652e93897930ba00d637231f42b41492e9460dde102040a358b18a9224176",
+    "data/species_soil_profiles.csv": "61d5692eef1f75b714ff5a7eafa2f0731aaa6481907663586369962138423661",
+    "data/species_metadata.csv": "4b5989c493125c7b29823f9d99638a3e41813cdc75cbce4d04234d28d6400725",
+    "app/services/recommendation_logic.py": "c5a127fdf73fc2072cdf6ffbb6c1d67840e08a3afbd1aa8071d268523c6acf9c"
+  },
+  "important": [
+    "Do not deploy Phase 68/69 demo recommendation CSV files as live recommendation data.",
+    "The website must calculate recommendations from the user's live inputs.",
+    "GBIF downloads, SoilGrids profile generation, model training and cross-validation remain offline research tasks."
+  ]
+}

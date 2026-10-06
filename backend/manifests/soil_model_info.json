@@ -1,0 +1,31 @@
+{
+  "model_file": "models/efficientnet_b0_soil_final.pth",
+  "architecture": "EfficientNet-B0",
+  "project_output_classes": [
+    "sand",
+    "loam",
+    "clay"
+  ],
+  "note": "Class index ordering must match the training checkpoint / dataset class mapping.",
+  "checkpoint_python_type": "dict",
+  "top_level_keys": [
+    "epoch",
+    "model_state_dict",
+    "optimizer_state_dict",
+    "val_macro_f1",
+    "classes",
+    "class_to_idx",
+    "model_name",
+    "stage"
+  ],
+  "class_to_idx": {
+    "Clay": 0,
+    "Loam": 1,
+    "Sand": 2
+  },
+  "classes": [
+    "Clay",
+    "Loam",
+    "Sand"
+  ]
+}

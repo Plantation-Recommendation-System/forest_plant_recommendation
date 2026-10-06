@@ -1,5 +1,5 @@
 {
-  "name": "plant-survival-ai-frontend",
+  "name": "ecoroot-frontend",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -17,3 +17,4 @@
   },
   "devDependencies": {}
 }
+

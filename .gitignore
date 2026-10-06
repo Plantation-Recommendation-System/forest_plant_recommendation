@@ -1,16 +1,43 @@
-# Python
-.venv/
+﻿# Python cache
 __pycache__/
 *.py[cod]
+*.pyo
+.pytest_cache/
 
-# Environment files
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment files / secrets
 .env
-backend/.env
+.env.*
+!.env.example
 
-# Node
+# Frontend dependencies/build
 frontend/node_modules/
 frontend/dist/
+frontend/.vite/
 
-# Local IDE files
+# IDE / OS
 .vscode/
 .idea/
+.DS_Store
+Thumbs.db
+
+# Logs / temporary
+*.log
+*.tmp
+build-error.txt
+
+# Python build artifacts
+build/
+dist/
+*.egg-info/
+
+# Backend development/test artifacts
+backend/test_assets/
+backend/audit_data/
+backend/api_response.json
+backend/app/services/survival_service_before_coverage_fix.py

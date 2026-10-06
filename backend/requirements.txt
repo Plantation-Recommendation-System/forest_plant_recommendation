@@ -8,3 +8,11 @@ scikit-learn
 joblib
 pandas
 numpy
+catboost
+torch
+torchvision
+pillow
+python-multipart
+requests
+rasterio
+soiltexture
