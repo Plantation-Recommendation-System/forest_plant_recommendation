@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+venv/
+.env
+.git/
+.gitignore
+audit_data/
+test_assets/
+api_response.json
+app/services/survival_service_before_coverage_fix.py
